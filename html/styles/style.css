@@ -1,11 +1,12 @@
 * {
-			text-align:center;
+			
 		}
 		header, footer {
 			background-color: #359;
 			padding: 30px;
 			color:white;
 			margin:10px;
+			text-align:center;
 		}
 		nav a {
 			background-color: #9b3;
@@ -20,4 +21,5 @@
 			width:80vw;
 			margin:auto;
 			background-color:gray;
+			padding:5px 15px;
 		}

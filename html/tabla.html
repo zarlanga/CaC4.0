@@ -6,24 +6,28 @@
 		<title> HTML: tps 1 / 2 / 3</title>
 		
 		<script src="https://kit.fontawesome.com/873ad54180.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="styles/style.css">
 		<style>
-		* {
+		tr,th,td{
+			border: 1px solid black;
+			padding:7px;
 			text-align:center;
 		}
-		header, footer {
-			background-color: #359;
-			padding: 30px;
+		th{
+			background-color:black;
 			color:white;
-			margin:10px;
 		}
-		nav a {
-			background-color: #9b3;
-			padding: 10px;
-			margin:2px;
-			color:gray;
+		tr:nth-child(odd) td:nth-child(odd) {
+			background-color:white;
 		}
-		nav a:hover{
-			background-color: #bbb;
+		tr:nth-child(even) td:nth-child(even) {
+			background-color:white;
+		}
+		tr:nth-child(odd) td:nth-child(even) {
+			background-color:red;
+		}
+		tr:nth-child(even) td:nth-child(odd) {
+			background-color:red;
 		}
 		</style>
 	</head>
@@ -42,7 +46,64 @@
 		</header>
 		<!------------------------------------------------------------------------>
 		
-		aca va la tabla
+		<article>
+		<table>
+			<tr>
+				<th> una columna </th>
+				<th> otra columna</th>
+				<th> otra columna mas </th>
+				<th> otra columna mas </th>
+				<th> otra columna mas </th>
+				<th> otra columna mas </th>
+				<th> y asi  </th>
+			</tr>
+			<tr>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+			</tr>
+			<tr>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+			</tr>
+			<tr>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+			</tr>
+			<tr>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+			</tr>
+			<tr>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+				<td>algo</td>
+			</tr>
+		</table>
+		</article>
 		
 		<!------------------------------------------------------------------------>
 		<footer>
