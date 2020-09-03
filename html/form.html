@@ -8,7 +8,11 @@
 		<script src="https://kit.fontawesome.com/873ad54180.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="styles/style.css">
 		<style>
-
+		article {
+			background-color:#aba;
+		}
+		
+		
 		</style>
 	</head>
 	<body>
@@ -26,7 +30,53 @@
 		</header>
 		<!------------------------------------------------------------------------>
 		
-		aca va el formulario
+		<article>
+			<form action="show_data.html">
+				<label for="nombre"> Nombre </label>
+				<input type="text" name="nombre" placeholder="Primer nombre"></input>
+				<br><br>
+				<label for="apellido"> Apellido </label>
+				<input type="text" name="apellido" placeholder="Apellido"></input>
+				<br><br>
+				<label for="emaill"> E-Mail </label>
+				<input type="email" name="emaill" placeholder="Direccion de E-Mail"/>
+				<br><br>
+				<label for="cumpleaños"> Cumpleaños </label>
+				<input type="date" name="cumpleaños" placeholder="cumpleaños" />
+				<br><br>
+				<label for="colorfav"> Color favorito </label>
+				<input type="color" name="colorfav"/>
+				<br><br>
+				<p>Pokemon favorito</p>
+				<input type="radio" name="pokefav" value="Pikachu" />
+				<label for="pokefav"> Pikachu </label>
+				<br>
+				<input type="radio" name="pokefav" value="Mudkip" />
+				<label for="pokefav"> Mudkip</label>
+				<br>
+				<input type="radio" name="pokefav" value="Bulbasaur" />
+				<label for="pokefav"> Bulbasaur</label>
+				<br><br>
+				<p>Era por abajo palacio?</p>
+				<input type="checkbox" name="palacio" value="Sii" />
+				<label for="palacio"> Si</label>
+				<br>
+				<input type="checkbox" name="palacio" value="Obvio" />
+				<label for="palacio"> Obvio </label>
+				<br>
+				<input type="checkbox" name="palacio" value="Claro" />
+				<label for="palacio"> Claro </label>
+				<br>
+				<input type="checkbox" name="palacio" value="NS/NC" />
+				<label for="palacio"> No se quien es palacio pero igual me causa gracia </label>
+				<br>
+				<br>
+				<input type="submit" value="Submitear">  </input>
+				
+				<input type="reset" value="Resetear">  </input>
+				
+			</form>
+		</article>
 		
 		<!------------------------------------------------------------------------>
 		<footer>
