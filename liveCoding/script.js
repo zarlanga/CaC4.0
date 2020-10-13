@@ -1,13 +1,16 @@
 
-var cont=0;
+var cont=1;
 
-var myInterval = setInterval(() => setColor("#mi_mensaje"),400);
+//var myInterval = setInterval(() => setColor("#mi_mensaje"),400);
+
+var myInterval = setInterval(() => setColor("#pal"),400);
 
 function setColor(t){
 	var col = getColor3();
-	$(t).css("background-color", col[0]);
-	$(t).css("color", col[1]);
+	$(t+cont).css("background-color", col[0]);
+	$(t+cont).css("color", col[1]);
 	console.log(cont++)
+	if (cont == 4) cont = 1;
 }
 
 function getColor3(){
