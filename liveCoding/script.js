@@ -3,7 +3,7 @@ var cont=1;
 
 //var myInterval = setInterval(() => setColor("#mi_mensaje"),400);
 
-var myInterval = setInterval(() => setColor("#pal"),400);
+var myInterval = setInterval( () => setColor("#pal"),250);
 
 function setColor(t){
 	var col = getColor3();
