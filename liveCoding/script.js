@@ -1,6 +1,6 @@
 
 var cont=1;
-
+var moneda = true;
 //var myInterval = setInterval(() => setColor("#mi_mensaje"),400);
 
 var myInterval = setInterval( () => setColor("#pal"),250);
@@ -11,6 +11,15 @@ function setColor(t){
 	$(t+cont).css("color", col[1]);
 	console.log(cont++)
 	if (cont == 4) cont = 1;
+	changeFont(t);
+}
+
+function changeFont(t) {
+	if (moneda)
+	$(t+cont).css("font-family", "'Roboto', sans-serif");
+	else 
+	$(t+cont).css("font-family", "'Sansita Swashed', cursive");	
+	moneda = !moneda;
 }
 
 function getColor3(){
