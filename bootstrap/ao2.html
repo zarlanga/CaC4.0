@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actividad obligatoria bootstrap // Roberto Zitto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+	
+	<div class="container w-50 bg-light">
+		<form>
+			
+			<div class="row form-group">
+				<div class="col-6 ">
+					<label for="np" >Nombre de pila</label> <br>
+					<input type="text" id="np" class="form-control"></input>
+				</div>
+				<div class="col-6">
+					<label for="ap" >Apellido</label> <br>
+					<input type="text" id="ap" class="form-control"></input>
+				</div>
+			
+			</div>
+			<div class="row form-group">
+				<div class="col-12 ">
+					<label class="label" for="nu" >Nombre de usuario</label> <br>
+					<div class="input-group">
+						<div class="input-group-prepend">
+							<div class="input-group-text" id="btnGroupAddon">@</div>
+						</div>
+						<input type="text" class="form-control" placeholder="Nombre de usuario" aria-label="Nombre de usuario" aria-describedby="btnGroupAddon" id="nu">
+					</div>
+				</div>
+			</div>
+
+			<div class="row form-group">
+				<div class="col-12">
+					<label for="email" >Correo electronico <span class="text-muted">(opcional)</span></label> <br>
+					<input type="text" id="email" placeholder="you@example.com" class="form-control"></input>
+				</div>
+			</div>
+			
+			<div class="row form-group">
+				<div class="col-12">
+					<label for="habla" >Habla a</label> <br>
+					<input type="text" id="habla" placeholder="123 Main st" class="form-control"></input>
+				</div>
+			</div>
+			
+			<div class="row form-group">
+				<div class="col-12">
+					<label for="dir2" >Direccion 2 <span class="text-muted">(opcional)</span></label> <br>
+					<input type="text" id="dir2" placeholder="Apartamento o suite" class="form-control"></input>
+				</div>
+			</div>
+			
+			<div class="row form-group">
+				<div class="col-5 ">
+					<label for="ispa" >Pais</label> <br>
+					<input list="ispas" id="ispa" class="form-control" placeholder="Escojer...">
+						<datalist id="ispas">
+							<option value="uzbekistan"></option>
+							<option value="turkmenistan"></option>
+						</datalist>
+					</input>
+				</div>
+				
+				<div class="col-4">
+					<label for="estado" >Estado</label> <br>
+					<input list="estados" id="estado" class="form-control" placeholder="Escojer...">
+						<datalist id="estados">
+							<option value="Estado de furia"></option>
+							<option value="Estado de crisis"></option>
+						</datalist>
+					</input>
+				</div>
+				<div class="col-3">
+					<label for="codigopostal" >Codigo Postal</label> <br>
+					<input type="text" id="codigopostal" class="form-control"></input>
+				</div>
+			
+			</div>
+				<hr>
+			
+			
+			<div class="row form-group">
+				<div class="col-12">
+				<input type="checkbox" id="sameadress"></input> <label for="sameadress"> La direccion de envio es la misma que mi direccion de facturacion  </label> <br>
+				</div>
+			</div>
+			<div class="row form-group">
+				<div class="col-12">
+				<input type="checkbox" id="saveinfo"></input> <label for="saveinfo"> Guarde esta informacion para la proxima vez.</label> <br>
+				</div>
+			</div>
+			
+		</form>
+	</div>
+	
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+      
+</body>
+</html>
